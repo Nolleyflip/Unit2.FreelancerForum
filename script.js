@@ -24,9 +24,15 @@ function newFreelancers (freelancer) {
     name.textContent = freelancer.name
 
     const occupation = document.createElement('td')
-    const price = document.createElement('td')
+    occupation.textContent = freelancer.occupation
 
-    name.appendChild('tr')
+    const price = document.createElement('td')
+    price.textContent = freelancer.price
+
+    row.append(name)
+    row.append(occupation)
+    row.append(price)
+
 }
 
 console.log(freelancer)
